@@ -8,4 +8,10 @@ import sympy
 
 x, y = sympy.symbols("x y") #変数の設定
 ex = x + 2 * y
-print(ex)
+#print(ex)
+
+#式展開の確認
+exx = x * ex
+print(exx) #結果が式が展開されずに表示される
+expand_exx = sympy.expand(exx) #式展開する場合は、"expand関数"を使用する
+print(expand_exx)
